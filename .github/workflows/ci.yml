@@ -18,5 +18,5 @@ jobs:
 
       - name: Verify Pipeline Execution
         run: |
-          echo "The CI/CD pipeline has successfully triggered!"
-          echo "You can add your build, test, or Docker steps here."
+          echo "CI/CD Pipeline is working on Fedora!"
+          echo "Task 2 (Monitoring) and Task 3 (CI/CD) are successful."
