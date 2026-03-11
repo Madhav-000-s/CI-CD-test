@@ -1,0 +1,22 @@
+name: Basic CI Pipeline
+
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+ 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Pipeline Execution
+        run: |
+          echo "The CI/CD pipeline has successfully triggered!"
+          echo "You can add your build, test, or Docker steps here."
